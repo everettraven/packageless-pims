@@ -7,5 +7,7 @@ pim "git" {
         volume {
             mount="/run/"
         }
+
+        port=3000
     }
 }
