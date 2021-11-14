@@ -2,7 +2,7 @@ pim "python" {
     base_dir="/python/"
    
     version "latest" {
-        image="packageless/python"
+        image="packageless/python:latest"
         
         volume {
             path="/python/latest/packages/"
