@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Packageless Containers',
+  title: 'Packageless Pims',
   tagline: 'Documentation',
   url: 'https://everettraven.github.io',
   baseUrl: '/packageless-pims/',
@@ -46,7 +46,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/everettraven/packageless-containers',
+            href: 'https://github.com/everettraven/packageless-pims',
             label: 'GitHub',
             position: 'right',
           },
