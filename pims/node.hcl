@@ -2,7 +2,7 @@ pim "node" {
     base_dir = "/node/"
 
     version "latest" {
-        image="packageless/node:latest"
+        image="packageless/nodejs:latest"
         
         volume {
             mount="/run/"
