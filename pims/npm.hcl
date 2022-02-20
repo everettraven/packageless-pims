@@ -19,19 +19,7 @@ pim "npm" {
             path="/npm/node_modules/"
             mount="/usr/local/lib/node_modules/"
         }
-
-        # Copy the config file over
-        copy {
-            source="/usr/local/lib/node_modules/npm/.npmrc"
-            dest="/npm/"
-        }
-
-        # Mount the volume for the config file
-        volume {
-            path="/npm/.npmrc"
-            mount="/usr/local/lib/node_modules/npm/.npmrc"
-        }
-
+        
         port=3000
     }
 }
