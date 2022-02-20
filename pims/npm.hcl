@@ -11,7 +11,7 @@ pim "npm" {
         # Mount where the global installed node modules will go
         volume {
             path="/npm/node_modules/"
-            dest="/usr/local/lib/node_modules/"
+            mount="/usr/local/lib/node_modules/"
         }
 
         # Copy the config file over
@@ -23,7 +23,7 @@ pim "npm" {
         # Mount the volume for the config file
         volume {
             path="/npm/.npmrc"
-            dest="/usr/local/lib/node_modules/npm/.npmrc"
+            mount="/usr/local/lib/node_modules/npm/.npmrc"
         }
 
         port=3000
