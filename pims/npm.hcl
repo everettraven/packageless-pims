@@ -23,12 +23,12 @@ pim "npm" {
         # Copy the config file over
         copy {
             source="/usr/local/lib/node_modules/npm/.npmrc"
-            dest="/npm/.npmrc"
+            dest="/npm/config/"
         }
 
         # Mount the volume for the config file
         volume {
-            path="/npm/.npmrc"
+            path="/npm/config/.npmrc"
             mount="/usr/local/lib/node_modules/npm/.npmrc"
         }
 
