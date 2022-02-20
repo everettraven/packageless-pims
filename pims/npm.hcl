@@ -8,6 +8,12 @@ pim "npm" {
             mount="/run/"
         }
 
+        # Copy node modules over
+        copy {
+            source="/usr/local/lib/node_modules/"
+            dest="/npm/node_modules"
+        }
+
         # Mount where the global installed node modules will go
         volume {
             path="/npm/node_modules/"
